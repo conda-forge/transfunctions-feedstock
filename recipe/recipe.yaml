@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.12"
+  version: "0.0.13"
 
 package:
   name: transfunctions
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/transfunctions/transfunctions-${{ version }}.tar.gz
-  sha256: a95980cdba8dc614db0e186031da038a0547051973a5bf01fdecdbd50be8cae5
+  sha256: e190dcc35cab86e29a65578151925d9a34915d1344a577c9a5b65dcc34cf92fd
 
 build:
   number: 0
@@ -23,9 +23,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - displayhooks >=0.0.6
-    - getsources >=0.0.3
-    - typing_extensions
+    - displayhooks >=0.0.7
+    - getsources >=0.0.4
+    - typing-extensions
+    
 
 tests:
   - python:

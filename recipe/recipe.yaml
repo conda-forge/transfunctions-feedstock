@@ -23,9 +23,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - displayhooks >=0.0.6
-    - getsources >=0.0.3
-    - typing_extensions
+    - displayhooks >=0.0.7
+    - getsources >=0.0.4
+    - typing-extensions
+    
 
 tests:
   - python:
